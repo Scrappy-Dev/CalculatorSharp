@@ -1,0 +1,66 @@
+```c#
+using System;
+/*
+ *                                                    {--Calculator#--}
+ *                                                      Version 1.0.0
+*/
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool staticval = true;
+            Console.WriteLine("Calculator# -- By ScrappyFriend77");
+            while (staticval)
+            {
+                string userInput = Console.ReadLine();
+                if (userInput == "add")
+                {
+                    Console.WriteLine("First #: ");
+                    string intValue1 = Console.ReadLine();
+                    Console.WriteLine("Second #: ");
+                    string intValue2 = Console.ReadLine();
+                    int niv1 = Int32.Parse(intValue1);
+                    int niv2 = Int32.Parse(intValue2);
+                    int answer = niv1 + niv2;
+                    Console.WriteLine("Answer: " + answer);
+                }
+                else if (userInput == "sub")
+                {
+                    Console.WriteLine("First #: ");
+                    string intValue1 = Console.ReadLine();
+                    Console.WriteLine("Second #: ");
+                    string intValue2 = Console.ReadLine();
+                    int niv1 = Int32.Parse(intValue1);
+                    int niv2 = Int32.Parse(intValue2);
+                    int answer = niv1 - niv2;
+                    Console.WriteLine("Answer: " + answer);
+                }
+                else if (userInput == "multiply")
+                {
+                    Console.WriteLine("First #: ");
+                    string intValue1 = Console.ReadLine();
+                    Console.WriteLine("Second #: ");
+                    string intValue2 = Console.ReadLine();
+                    int niv1 = Int32.Parse(intValue1);
+                    int niv2 = Int32.Parse(intValue2);
+                    int answer = niv1 * niv2;
+                    Console.WriteLine("Answer: " + answer);
+                }
+                else if (userInput == "div")
+                {
+                    Console.WriteLine("First #: ");
+                    string intValue1 = Console.ReadLine();
+                    Console.WriteLine("Second #: ");
+                    string intValue2 = Console.ReadLine();
+                    int niv1 = Int32.Parse(intValue1);
+                    int niv2 = Int32.Parse(intValue2);
+                    int answer = niv1 / niv2;
+                    Console.WriteLine("Answer: " + answer);
+                }
+            }
+        }
+    }
+}
+```
